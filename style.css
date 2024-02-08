@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #077e5a;
+}
+.gamecon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    padding: 2vw;
+    position: relative;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    border: 4px solid #000;
+    position: relative;
+    background-color: #eed6b7f2;
+}
+.box{
+    border: 1px solid #000;
+    font-size: 5vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background-color: rgb(172, 243, 213)
+}
+.info{
+    margin: 10px;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+    position: absolute;
+    top: 8%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+}
+.if{
+    font-size: 3vw;
+    color: #eed3a3;
+    text-shadow: 2px 3px #1a1616;
+}
+#reset{
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+    background-color: #1b4f3f;
+    color: #dadada;
+    box-shadow: 2px 2px #1a1616;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#reset:hover{
+    box-shadow: none;
+}
+.line{
+    background-color: #000;
+    width: 0vw;
+    height: 2px;
+    position: absolute;
+    transition: width 1s ease-in-out;
+
+}
