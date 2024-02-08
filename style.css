@@ -88,3 +88,26 @@ html,body{
         padding: 1vw 2vw;
     }
 }
+@media (max-width:400px) {
+    .gamecon{
+        gap: 10vh;
+        padding: 5vw;
+    }
+    .container{
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vw);
+        border: 2px solid #000;
+    }
+    .imgbox img{
+        top: 10%;
+        left: 60%;
+    }
+    .if{
+        font-size: 5vw;
+        text-shadow: 2px 2px #1a1616;
+    }
+    #reset{
+        font-size: 5vw;
+        padding: 2vw 3vw;
+    }
+}
