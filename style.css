@@ -23,7 +23,7 @@ html,body{
     display: grid;
     grid-template-columns: repeat(3, 10vw);
     grid-template-rows: repeat(3, 10vw);
-    border: 4px solid #000;
+    border: 3px solid #000;
     position: relative;
     background-color: #eed6b7f2;
 }
