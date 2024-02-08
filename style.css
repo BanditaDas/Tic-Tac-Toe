@@ -67,11 +67,24 @@ html,body{
 #reset:hover{
     box-shadow: none;
 }
-.line{
-    background-color: #000;
-    width: 0vw;
-    height: 2px;
-    position: absolute;
-    transition: width 1s ease-in-out;
-
+@media (max-width:700px) {
+    .gamecon{
+        gap: 10vh;
+        padding: 5vw;
+    }
+    .container{
+        grid-template-columns: repeat(3, 15vw);
+        grid-template-rows: repeat(3, 15vw);
+    }
+    .imgbox img{
+        top: 10%;
+        left: 60%;
+    }
+    .if{
+        font-size: 4vw;
+    }
+    #reset{
+        font-size: 4vw;
+        padding: 1vw 2vw;
+    }
 }
